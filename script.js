@@ -1,13 +1,14 @@
-function login() {
+function login(event) {
+  event.preventDefault();
   console.log("Login function called");
-  let loginFrom = document
-    .getElementById("loginId")
-    .addEventListener("submit", function () {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-      console.log("Username:", username);
-      console.log("Password:", password);
-    });
+  // let loginFrom = document
+  //   .getElementById("loginId")
+  //   .addEventListener("submit", function () {
+  //     const username = document.getElementById("username").value;
+  //     const password = document.getElementById("password").value;
+  //     console.log("Username:", username);
+  //     console.log("Password:", password);
+  //   });
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
   console.log("Username:", username);
